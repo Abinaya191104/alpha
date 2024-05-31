@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>Alpha Events</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="index.html"> EVENTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>ALPHA </h1>
+            <p>FUN BEYOND LIMITS - Let's dive into the fun-filled space!</p>
+        </div>
+    </section>
+    <section class="alpha">
+        <h1>What is Alpha?</h1>
+        <p>An event filled with joy, laughter, fun and lots of knowledge! <br> What else does one need other than all these?
+        <p style="background-color: aquamarine; ">Come together to celebrate and participate in this grand fest conducted by our college! <br>
+        There are lots of funny events, Dj shows, Music Mania Shows, Dance shows and even code-a-thons!!!</p>
+        <p>Head to the events section to know more about the events conducted by "ALPHA".</p>
+        <div class="icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+    </section>
+    <!-----Toggle Menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>

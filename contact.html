@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register for the events</h2>
+        <form onsubmit="emailSend(); reset(); return false;">
+            <input type="text" id="NAME" placeholder="NAME" name="NAME" required>
+            <input type="text" id="PHONE" placeholder="PHONE" name="PHONE" required>
+            <input type="email" id="EMAIL" placeholder="EMAIL" name="EMAIL" required>
+            <button type="submit" class="btn">SUBMIT</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+    <script src="Contact.js"></script>
+</body>
+</html>
+<!-- #2525 -->
+<!-- #smtp.elasticemail.com -->

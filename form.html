@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>Alpha Events</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+
+<div class="container">
+<form onsubmit="sendEmail(); reset(); return false;">
+<h3> PRE-REGISTRATION FORM </h3>
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" id="reg.no" placeholder="Register No" required>
+<input type="text" id="course" placeholder="Course,year,section" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="text" id="phone" placeholder="Phone number" required>
+<button type="submit"> Submit </button> 
+</form>
+</div>
+
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+    function sendEmail() {
+       Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "mirithi31@gmail.com",
+    Password : "D0D4823D8F1F3B361FA5F9BFDD2A3E3416A5",
+    To : 'mirithi31@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "new contact form enquiry",
+    Body : "And this is the body"
+   }).then(
+   message => alert(message)
+   ); 
+</script>
+
+</body>
+</html>
